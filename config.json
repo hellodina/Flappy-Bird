@@ -1,0 +1,9 @@
+{
+    "screen_width": 800,
+    "screen_height": 600,
+    "player_gravity": 0.25,
+    "flap_strength": -6.5,
+    "obstacle_speed": 4,
+    "wall_gap": 170,
+    "enemy_speed": 3
+}
