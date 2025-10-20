@@ -1,0 +1,19 @@
+{
+  "name": "Flappy Game Dev",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "bash .devcontainer/setup-display.sh",
+  "forwardPorts": [6080],
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "github.copilot",
+        "github.copilot-chat",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  }
+}
