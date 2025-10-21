@@ -1,19 +1,21 @@
 {
-  "name": "Flappy Game Dev",
+  "name": "Flappy Bird ",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "postCreateCommand": "bash .devcontainer/setup-display.sh",
-  "forwardPorts": [6080],
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {}
-  },
   "customizations": {
     "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.analysis.autoImportCompletions": true,
+        "python.languageServer": "Pylance",
+        "terminal.integrated.shellIntegration.enabled": true
+      },
       "extensions": [
-        "github.copilot",
-        "github.copilot-chat",
         "ms-python.python",
         "ms-python.vscode-pylance"
       ]
     }
-  }
+  },
+  "postCreateCommand": "python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt",
+  "remoteUser": "vscode"
 }
+
