@@ -1,0 +1,74 @@
+# ==============================
+# Python / VS Code / Dev Container
+# ==============================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs and test results
+*.log
+*.pot
+*.pycoverage
+.coverage
+.tox/
+.nox/
+pytest_cache/
+*.tmp
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+.history/
+*.code-workspace
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment variables / secrets
+.env
+.env.*
+*.secret
+
+# Dev container & Docker artifacts
+.devcontainer/.venv/
+.devcontainer/data/
+*.pid
+*.sock
+
+# Game-specific assets
+assets/__pycache__/
+assets/temp/
+__screenshots__/
+__debug__/
+
+# Temporary test scripts or debug exports
+temp_*.py
+scratch_*.py
+
+# Pygame cache or runtime files
+*.pyproj
+*.pyo
+*.pyd
